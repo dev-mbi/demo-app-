@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    font-family: system-ui, sans-serif;
+    margin: 0;
+}
+
+body {
+    background: #1e1e2e;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    min-height: 100vh;
+}
+
+#calc {
+    background: #2d2d44;
+    border-radius: 16px;
+    padding: 24px;
+    width: 340px;
+}
+
+h1 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+#display {
+    background: #16161e;
+    border-radius: 8px;
+    font-size: 32px;
+    padding: 16px;
+    text-align: right;
+    min-height: 68px;
+    margin-bottom: 16px;
+    overflow-wrap: break-word;
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    background: #45457a;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 16px;
+}
+
+button:hover {
+    background: #5a5a99;
+}
+
+#history {
+    border-top: 1px solid #45457a;
+    padding-top: 12px;
+}
+
+#history h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+#history h2 button {
+    font-size: 12px;
+    padding: 6px 10px;
+    background: #db4f4f;
+}
+
+#history h2 button:hover {
+    background: #ef6a6a;
+}
+
+#history-list {
+    list-style: none;
+    padding: 0;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+#history-list li {
+    background: #16161e;
+    border-radius: 6px;
+    margin-bottom: 6px;
+    padding: 8px;
+}
